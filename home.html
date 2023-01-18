@@ -6,13 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>  Document</title>
     <style>
-        
+        *{
+            font-family:'Courier New', Courier, monospace; 
+        }
        #nav{
         display: flex;
       justify-content: space-between;
        margin: auto;
-       width: 200vh; position: fixed;
+       width: 100%; position: fixed;
        background-color: rgb(240, 240, 240);
+       top: 0;
        } 
        #nav div:nth-child(2){
         margin-right: 150px;
@@ -31,8 +34,8 @@
        #nav2{
         display: flex;
         justify-content: space-between;
-        width: 200vh; position: fixed;
-        margin-top: 30px;background-color: rgb(248, 248, 248);
+        width:100%; position: fixed;
+        margin-top: 20px;background-color: rgb(248, 248, 248);
        }
        #nav2 div{
         display: flex;
@@ -44,6 +47,11 @@
        } 
        #nav2 div p{
         margin-left: 20px;
+       } 
+       #nav2 div a{
+        margin-left: 20px;
+        text-decoration: none;
+        color: black;
        } 
        #nav2 div img{
         margin-left: 20px;
@@ -63,20 +71,19 @@ margin-right: 20px;
        }
        #nav2 div:nth-child(2){
         margin-right: 150px;
+        
        } 
        #nav3{
         display: flex;
       justify-content: space-around;
        width: 50%;
        margin: auto;
-       width: 200vh; position: fixed;
-       margin-top: 100px;
+       width: 100%; position: fixed;
+       margin-top: 80px;
        background-color: rgb(248, 248, 248);
        } 
        #fimg{
         width: 100%;
-        margin-top: 200px;
-        
        }
        #boximg div{
         width: 30%;
@@ -105,7 +112,8 @@ display: flex;
         text-align: center;
        }
        #logo{
-width: 100px;
+        width: 40px;
+margin-right: 10px;
        }
        .man{
         display: flex;
@@ -118,13 +126,29 @@ width: 100px;
         width: 90%;
         display: flex;
        }
+       #sliding_img{
+        margin-top: 170px;
+        display: flex;
+
+       }
+       /* #sliding_img div{
+       } */
+       #sliding_img img{
+        width:100%;
+
+       }
+       a{
+            
+        text-decoration: none;
+        color: black;
+        }
     </style>
 </head>
 <body>
     <div id="nav">
         <div>
             <p>Offers</p>
-            <p>Fanbook</p>
+          <a href="fanboox.html">  <p>Fanbook</p></a>
             <p>Download App</p>
             <p>TriBe Membership</p>
         </div>
@@ -137,14 +161,16 @@ width: 100px;
 <div id="nav2">
 <div>
     <img id="logo" src="LOGO.png" alt="" >
-<i><h2>RAX CART</h2></i> 
+<i>  <a href="home.html"><h2>RAX CART</h2> </a>  </i> 
 <p>MEN</p>
 <p>WOMEN</p>
 <p>MOBILE COVERS</p>
 </div>
 <div>
 <input type="text" placeholder="Search by product, category or collectior" name="" id=""><p>|</p>
-<p>Login</p>
+
+  <a href="./singin.html"> <b> <p>Login</p</b> </a> 
+
 <img src="https://www.freeiconspng.com/thumbs/heart-png/heart-png-15.png" alt="">
 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmthDqHW1p7dfHpE7s32bpjzfHjtF00zcejtAuslYfwQxV1Qb4tilHRLoQpfabivds-bE&usqp=CAU" alt="">
 </div>
@@ -157,9 +183,15 @@ width: 100px;
 <p>ACCESSORIES</p>
 <p>WINTERWEAR</p>
 </div>
-<div>
-   <!-- sliding img -->
-</div>
+<div id="sliding_img">
+                                    <!-- sliding img -->
+   <div><img src="https://images.bewakoof.com/uploads/grid/app/mad-india-common--1673630619.jpg" alt=""></div>
+   <div><img src="https://images.bewakoof.com/uploads/grid/app/revamped-banner-1x1-B3A899-1673630084.jpg" alt=""></div>
+   <div><img src="https://images.bewakoof.com/uploads/grid/app/b2g1-1x1-common-1670505865.jpg" alt=""></div>
+   <div><img src="https://images.bewakoof.com/uploads/grid/app/oversized-tees-1x1-common-1673957836.jpg" alt=""></div>
+   <div><img src="https://images.bewakoof.com/uploads/grid/app/Homepage-1X1-Winterwear-offer-02-1673631217.jpg" alt=""></div>
+ </div>  
+                                           <!-- full screen img -->
 <img id="fimg" src="https://images.bewakoof.com/uploads/grid/app/Desktop-Strip-6-1669115141.jpg" alt="">
 
 <div id="boximg">
