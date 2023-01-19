@@ -65,7 +65,6 @@ color: white;
       <input type="text" name="" placeholder="Password" id="pass">
       <br><br>
       <button id="button">CONTINUE</button><br>
-      <a href="./home.html"><p id="home"></p></a> 
       <p class="ltext">By creating an account or logging in, you agree with Bewakoof's Terms and Conditions and Privacy Policy.</p>
 </div>
     </div>
@@ -83,7 +82,7 @@ arr.forEach(element => {
     if(element.id==inp.value && element.pass==pass.value){
 
 alert("LOGIN SUCCESS : Click home to go main page")
- check()
+window.location.href="./home.html"
     }else{
         alert("Something is Wrong")
     }
@@ -91,10 +90,4 @@ alert("LOGIN SUCCESS : Click home to go main page")
 
 })
  let home=document.getElementById("home")
-
-function check(){home.innerHTML=""
-    let h1=document.createElement("h1")
-    h1.innerText="Home Page"
-home.append(h1)
-}
 </script>
