@@ -53,15 +53,9 @@ text-decoration: none;
 color: black;
 } 
 #nav2 div img{
-margin-left: 20px;
+margin-left: 0px;
 } 
-#nav2 input{
-height: 30px;
-width: 250px;
-border: none;
-background-color: rgb(238, 238, 238);
-border-radius: 8px;
-}
+
 #nav2 h2{
 margin-right: 20px;
 }
@@ -69,7 +63,7 @@ margin-right: 20px;
 width: 20px;
 }
 #nav2 div:nth-child(2){
-margin-right: 150px;
+margin-right: 0px;
 
 } 
 #nav3{
@@ -147,6 +141,7 @@ padding-top: 40px;
   #main_cart div{
 width: 95%;
 margin: auto;
+background-color: #f1f0f0;
   }
   #main_cart img{
 width: 100%;
@@ -169,11 +164,28 @@ font-size: small;
         color: #000000;
         font-size: 25px;
           }
+          #scarch{
+            height: 30px;
+            width: 250px;
+            border: none;
+            background-color: rgb(238, 238, 238);
+            border-radius: 8px;
+            
+          }
           #main_cart button{
-            margin-left: 200px;
+            padding: 7px 13px 7px 13px;
+            margin-left: 30px;
            border-radius: 9px;
            border: none;
+           background-color: #2cb0c8;
+           color: white;
+           font-size: 16px;
+           text-align: center;
               }
+              #main_cart button:hover{
+                
+               background-color: #74d9da;
+                  }
   #filter{
   align-items: flex-end;
    margin-left: 83%;
