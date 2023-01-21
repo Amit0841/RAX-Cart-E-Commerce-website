@@ -27,7 +27,7 @@ display: flex;
 #nav div p{
 margin-left: 20px;
 font-size: x-small;
-} 
+}
 #nav2{
 display: flex;
 justify-content: space-between;
@@ -88,7 +88,6 @@ box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px
  padding-right: 50px;
   background-color: #f1f1f1;
   min-width:50%;
- 
  } 
  .line{
     border-left: solid black ;
@@ -195,3 +194,86 @@ font-size: small;
    border-radius: 9px;
    width: 80px;
   }
+  #endber>h2{
+    padding-top: 40px;
+      }
+    
+     
+     #endber>div{
+      display: flex;
+  width: 80%;
+  margin: auto;
+  
+     }
+     #line1>p{
+      color: white
+         }
+         #line2{
+          margin-left: 60px;
+  margin-top: 44px;
+    }
+   #line2>p{
+    color: white;     
+   }
+  #line2>img{
+  width: 30%;
+     }
+     #line3{
+  margin-top: 44px;
+     }
+     #line3>p{
+      color: white;      
+     }
+     #line3>h5{
+        margin-top: 80px;  
+     }
+     #line4{
+      margin-top: 44px;
+      margin-left: 60px;
+     }
+   #line4>input{
+  background-color: rgb(34, 34, 38);
+  border: none;
+   border-bottom: solid yellow;
+   color: #f1f1f1;
+   }
+   #line4>button{
+  background-color: yellow;
+  font-size:17px;
+  padding: 10px 15px 10px 15px;
+  
+   }
+   #endber{
+     background-color: rgb(34, 34, 38);
+     color: yellow;
+  height: 100%;
+  }
+  #endber>hr{
+  width: 80%;
+  }
+  #nd2{
+    display: flex;
+  color: white;
+  }
+  .linea{
+  font-size: 15px;
+  }
+  .lineb{
+    margin-left: 70px;
+  }
+  .linec{
+  margin-left: 70px;
+  }
+  .lined{
+    margin-top: 17px;
+    margin-left: 150px;
+    color: aqua;
+    font-size: 22px;
+  }
+  #BT{
+   
+    width: 80%;
+    margin: auto;
+    color: #f1f1f1;
+  }
+  
