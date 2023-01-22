@@ -113,13 +113,53 @@ width: 40px;
 margin-right: 10px;
 }
 .main4{
-margin-top: 200px;
+margin-top: 130px;
+margin-bottom: 100px;
 }
 .main2{
-    border: solid red;
+    background-size: 100% 100% ;
+    background-image:url("https://images.bewakoof.com/web/group-19-1617704502.png") ;
     width: 80%;
     margin: auto;
-    text-align: center;
+ /* height: 607px; */
+}
+
+#main3>input{
+   margin-bottom: 30px;
+   border-radius: 9px;
+   background-color: rgb(228, 228, 228);
+}
+body{
+    background-image: linear-gradient(rgb(127, 155, 240), rgb(113, 72, 119));   
+}
+#First_name{
+
+margin-left: 18%;
+
+}
+#mobile_number{
+margin-left: 18%;
+}
+#email{
+    margin-left: 18%;
+}
+button{
+    padding: 10px 10px 10px 10px ;
+    margin-top: 5%;
+    margin-left: 45%;
+}
+#Last_name{
+    margin-left: 10%;
+}
+#Enter_Address{
+    margin-left: 10%;
+}
+#pin{
+    margin-left: 10%;
+}
+.main2 input{
+width: 25%;
+height: 50px;
 }
     </style>
 </head>
@@ -142,7 +182,7 @@ margin-top: 200px;
 <div id="nav2">
 <div>
 <img id="logo" src="LOGO.png" alt="" >
-<i>  <a href="home.html"><h2>RAX CART</h2> </a>  </i> 
+<i>  <a href="index.html"><h2>RAX CART</h2> </a>  </i> 
 
 <div class="dropdown">
 <a href="./mens.html">
@@ -309,39 +349,42 @@ margin-top: 200px;
  <!-- nav bar end --> 
 
  <div class="main2">
+
       <div class="main4">
         <h3>RETURN POLICY</h3>
         <P>After purchase the product return policy is valid till two days
 
         </P>
+        
     </div>
-     
+     <select name="" id="P">
+        <option value="">Paymant By</option>
+        <option value="">Google pay</option>
+        <option value="">Paytm</option>
+        <option value="">Cash on</option>
+     </select>
     <div id="main3">
 
-<input type="text" placeholder="First name " name="" id="">
-<input type="text" placeholder="Last namer" name="" id=""><br>
-<input type="text" placeholder="mobile number" name="" id="">
-<input type="text" placeholder="Enter Address">
-<input type="text" placeholder="Email" name="" id="">
-            <input type="text" placeholder="pin Code">
+<input type="text" placeholder="First name " name="" id="First_name">
+<input type="text" placeholder="Last name" name="" id="Last_name"><br>
+<input type="number" placeholder="mobile number" name="" id="mobile_number">
+<input type="text" placeholder="Enter Address" id="Enter_Address"><br>
+<input type="email" placeholder="Email" name="" id="email">
+            <input type="number" placeholder="pin Code" id="pin">   
+       
     </div>
-  
+  <button onclick="check()">PAYMENT NOW</button>
 
-    <div class="main1">
-     
-        <div>
-           
-        </div>
-        <form action="">
-            
-            
-            <button>PAYMENT NOW</button>
-
-        </form>
-</div>
 </div>
 
-
+<img style="width: 25%; margin-top: 40px;margin-left: 20px;"  src="https://images.bewakoof.com/web/secure-payments-image.png" alt="">
 
 </body>
 </html>
+<script>
+function check(){
+    setTimeout(() => {
+        alert("Payment Successfull")
+    }, 3000);
+}
+</script>
