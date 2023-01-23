@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        *{
+            font-family:'Courier New', Courier, monospace; 
+        }
+      
+        #nav{
+           
+        display: flex;
+      justify-content: space-between;
+       margin: auto;
+       width: 210vh; position: fixed;
+       background-color: rgb(240, 240, 240);
+       top: 0;
+       } 
+       #nav div:nth-child(2){
+        margin-right: 150px;
+       } 
+       #nav div:nth-child(1){
+        margin-left: 150px;
+       } 
+       #nav div{
+        display: flex;
+        
+       } 
+       #nav div p{
+        margin-left: 20px;
+        font-size: x-small;
+       } 
+       #nav2{
+        display: flex;
+        justify-content: space-between;
+        width: 210vh; position: fixed;
+        margin-top: 20px;background-color: rgb(248, 248, 248);
+       }
+       #nav2 div{
+        display: flex;
+ align-items:center ;
+ 
+       }
+       #nav2 div:nth-child(1){
+        margin-left: 150px;
+       } 
+       #nav2 div p{
+        margin-left: 20px;
+       } 
+       #nav2 div a{
+        margin-left: 20px;
+        text-decoration: none;
+        color: black;
+       } 
+       #nav2 div img{
+        margin-left: 20px;
+       } 
+       #nav2 input{
+        height: 30px;
+       width: 250px;
+       border: none;
+       background-color: rgb(238, 238, 238);
+       border-radius: 8px;
+       }
+       #nav2 h2{
+margin-right: 20px;
+       }
+       #nav2 div:nth-child(2) img{
+        width: 20px;
+       }
+       #nav2 div:nth-child(2){
+        margin-right: 150px;
+       } 
+       #logo{
+width: 40px;
+margin-right: 10px;
+       }
+                                  /* nav end */
+       #main{
+            display: flex;
+            width: 100%;
+        }
+        #main div{
+            width:70%;
+        }
+        .img{
+            padding-top: 90px;
+           height:61vh ;
+            width:100% ;
+            background-image: linear-gradient(rgb(255, 255, 255), rgb(238, 196, 141));
+            align-items: flex-end;
+        }
+        .two>div{
+          width: 100%;
+         margin: auto;
+         text-align: center;
+        }
+        .two>div h4{
+            margin-top: 40px;
+        color: rgb(140, 142, 145);
+        }
+        .two>div h1{
+margin-top: 100px;
+font-size:xx-large;
+        }
+        .two>div input{
+            width: 350px;
+            margin-top: 15px;
+height: 50px;
+border-radius: 9px;
+border: solid rgb(196, 192, 192);
+        }
+        .two>div button{
+            width: 350px;
+            margin-top: 20px;
+height: 50px;
+border-radius: 9px;
+background-color: rgb(61, 173, 173);
+border: none;
+color: white;
+        }
+        .two{
+           
+            margin-top: 110px;
+        }
+        .one{
+            width: 100%;
+            display: block;
+           text-align: center;
+           margin-top: 100px;
+        }
+        .ltext{
+            color: rgb(126, 124, 122);
+        }
+        a{
+            margin-left: 20px;
+        text-decoration: none;
+        color: black;
+        }
+    </style>
+</head>
+<body>
+    <div id="nav">
+        <div>
+            <p>Offers</p>
+            <p>Fanbook</p>
+            <p>Download App</p>
+            <p>TriBe Membership</p>
+        </div>
+
+        <div>
+<p>Contact Us</p>
+<p>Track Order</p>
+        </div>
+    </div>
+<div id="nav2">
+<div>
+    <img id="logo" src="LOGO.png" alt="" >
+<i><h2>RAX CART</h2></i> 
+<p>MEN</p>
+<p>WOMEN</p>
+<p>MOBILE COVERS</p>
+</div>
+<div>
+<input type="text" placeholder="Search by product, category or collectior" name="" id=""><p>|</p>
+
+
+<img src="https://www.freeiconspng.com/thumbs/heart-png/heart-png-15.png" alt="">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmthDqHW1p7dfHpE7s32bpjzfHjtF00zcejtAuslYfwQxV1Qb4tilHRLoQpfabivds-bE&usqp=CAU" alt="">
+</div>
+</div>
+    <div id="main">
+        <div class="one">
+            <h1>Welcome to the world of RaxCart!</h1>
+            <img class="img" src="https://images.bewakoof.com/web/group-19-1617704502.png" alt="">
+        </div>
+
+         <div class="two" >         <!--  id  pass -->
+            <div>
+          <h1><a href="login.html">Log in </a> /<a href="singin.html">Sign up </a> </h1>
+          <h4>for Latest trends, exciting offers and everything Rax Cart!</h4>
+          <input placeholder="Enter Mobile Or Email " id="input" type="text">
+          <input type="text" name="" placeholder="Password" id="pass">
+          <br> <br>
+
+          <button id="button">CONTINUE</button> 
+
+          <br><br>
+          <p class="ltext">By creating an account or logging in, you agree with Bewakoof's Terms and Conditions and Privacy Policy.</p>
+</div>
+        </div>
+    </div>
+</body>
+</html>
+                                 <!-- script -->
+<script>
+
+let inp =document.getElementById("input")
+let pass=document.getElementById("pass")
+let arr=[]
+document.getElementById("button").addEventListener("click",(e)=>{
+e.preventDefault();
+let obj={
+    id : inp.value,
+    pass : pass.value,
+}
+arr.push(obj)
+localStorage.setItem("ID",JSON.stringify(arr))
+// alert("Sing up success")
+})
+</script>

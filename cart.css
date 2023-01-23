@@ -1,0 +1,185 @@
+*{
+    font-family:'Courier New', Courier, monospace; 
+}
+#nav{
+display: flex;
+justify-content: space-between;
+margin: auto;
+width: 100%; position: fixed;
+background-color: rgb(240, 240, 240);
+top: 0;
+box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+} 
+#nav div:nth-child(2){
+margin-right: 150px;
+} 
+#nav div:nth-child(1){
+margin-left: 150px;
+} 
+#logo{
+    width: 40px;
+    margin-right: 10px;
+    }
+#nav>div{
+display: flex;
+
+} 
+#nav div p{
+margin-left: 20px;
+font-size: x-small;
+} 
+#nav2{
+display: flex;
+justify-content: space-between;
+width:100%; position: fixed;
+margin-top: 20px;background-color: rgb(248, 248, 248);
+top: 0;
+box-shadow:  rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+#nav2>div{
+display: flex;
+align-items:center ;
+
+}
+#nav2 div:nth-child(1){
+margin-left: 150px;
+} 
+#nav2 div p{
+margin-left: 20px;
+} 
+#nav2 div a{
+margin-left: 20px;
+text-decoration: none;
+color: black;
+} 
+#nav2 div img{
+margin-left: 20px;
+} 
+#nav2 input{
+height: 30px;
+width: 250px;
+border: none;
+background-color: rgb(238, 238, 238);
+border-radius: 8px;
+}
+#nav2 h2{
+margin-right: 20px;
+}
+#nav2 div:nth-child(2) img{
+width: 20px;
+}
+#nav2 div:nth-child(2){
+margin-right: 150px;
+
+} 
+#nav3{
+display: flex;
+justify-content:center;
+justify-content: space-evenly;
+width: 50%;
+margin: auto;
+ width: 100%; position: fixed;
+margin-top: 100px;
+
+
+background-color: rgb(248, 248, 248);
+top: 0;
+box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+} 
+.dropdown-content{
+    display:none;
+ position: absolute;
+ padding-top: 20px;
+ padding-left: 50px;
+ padding-right: 50px;
+  background-color: #f1f1f1;
+  min-width:50%;
+ 
+ } 
+ .line{
+    border-left: solid black ;
+ }
+
+.dropdown-content a:hover {background-color: rgb(220, 213, 213); }
+
+.dropdown:hover .dropdown-content {display: grid;
+    column-gap: 50px;
+    row-gap: 9px;
+    grid-template-columns: repeat(3,190px);
+   
+}
+  .slidingimg{
+   width: 100%; height: 90%;margin-top: 150px;
+  }  
+  #endber>h2{
+padding-top: 40px;
+  }
+ #endber{
+   padding-left: 30px;
+    background-color: rgb(34, 34, 38);
+    color: yellow;
+    height: 300px;
+ }
+ a{ 
+    text-decoration: none;
+    color: black;
+    }
+ .manN:hover {
+    border-bottom: 4px solid rgb(0, 210, 221) ;
+    }
+    .womanN:hover {
+    border-bottom: 4px solid rgb(0, 210, 221) ;
+    }
+    .nobileN:hover {
+    border-bottom: 4px solid rgb(0, 210, 221) ;
+    }
+   #count{
+    margin-top: 150px;margin-left: 100px
+   } 
+  #main_cart{
+   
+    width: 70%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 19px;
+  }  
+  #main_cart div{
+width: 95%;
+margin: auto;
+  }
+  #main_cart img{
+width: 100%;
+  }
+  #main_cart h4{
+    margin-left: 10px;
+    margin-top: 0px;
+color: #6c6c6c;
+font-size: small;
+  }
+  #main_cart p{
+    margin-left: 10px;
+    margin-top: -1px;
+    color: #515151;
+    font-size: small;
+      }
+      #main_cart h1{
+        margin-top: -10px;
+        margin-left: 10px;
+        color: #000000;
+        font-size: 25px;
+          }
+          #main_cart button{
+            margin-left: 200px;
+           border-radius: 9px;
+           border: none;
+              }
+  #filter{
+  align-items: flex-end;
+   margin-left: 83%;
+   margin-bottom: 70px;
+   border: none;
+  font-size: 15px;
+   border-radius: 9px;
+   width: 80px;
+  }

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+     *{
+            font-family:'Courier New', Courier, monospace; 
+        }
+      .two>div{
+          width: 100%;
+         margin: auto;
+         text-align: center;
+        }
+        .two>div h4{
+            margin-top: 40px;
+        color: rgb(90, 91, 92);
+        }
+        .two>div h1{
+margin-top: 10px;
+font-size:xx-large;
+        }
+        .two>div input{
+            width: 350px;
+            margin-top: 15px;
+height: 50px;
+border-radius: 9px;
+border: solid rgb(196, 192, 192);
+        }
+        .two>div button{
+            width: 350px;
+            margin-top: 20px;
+height: 50px;
+border-radius: 9px;
+background-color: rgb(61, 173, 173);
+border: none;
+color: white;
+        }
+        .two{
+           
+            margin-top: 110px;
+        }
+        a{
+            margin-left: 20px;
+        text-decoration: none;
+        color: black;
+        }
+        body{
+            height:82vh;
+            background-image: linear-gradient(rgb(147, 207, 230), rgb(238, 196, 141));
+        }
+</style>
+<body>
+   
+                   
+    <div class="two" >         <!--  id  pass -->
+        <div>
+            
+      <h1><a href="login.html">Log in </a> /<a href="singin.html">Sign up </a> </h1>
+      <h4>for Latest trends, exciting offers and everything Rax Cart!</h4>
+      <input placeholder="Enter Mobile Or Email " id="input" type="text"><br>
+      <input type="text" name="" placeholder="Password" id="pass">
+      <br><br>
+      <button id="button">CONTINUE</button><br>
+      <p class="ltext">By creating an account or logging in, you agree with Bewakoof's Terms and Conditions and Privacy Policy.</p>
+</div>
+    </div>
+</body>
+</html>
+
+<script>
+    let arr=JSON.parse(localStorage.getItem("ID"))||[]
+    let inp=document.getElementById("input")
+    let pass=document.getElementById("pass")
+
+    document.getElementById("button").addEventListener("click",(e)=>{
+e.preventDefault();
+arr.forEach(element => {
+    if(element.id==inp.value && element.pass==pass.value){
+
+alert("LOGIN SUCCESS : Click home to go main page")
+window.location.href="./home.html"
+    }else{
+        alert("Something is Wrong")
+    }
+});
+
+})
+ let home=document.getElementById("home")
+</script>

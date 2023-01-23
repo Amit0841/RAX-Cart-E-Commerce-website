@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         *{
+            font-family:'Courier New', Courier, monospace; 
+        }
+         #nav{
+        display: flex;
+      justify-content: space-between;
+       margin: auto;
+       width: 100%; position: fixed;
+       background-color: rgb(240, 240, 240);
+       top: 0;
+       } 
+       #nav div:nth-child(2){
+        margin-right: 150px;
+       } 
+       #nav div:nth-child(1){
+        margin-left: 150px;
+       } 
+       #nav div{
+        display: flex;
+        
+       } 
+       #nav div p{
+        margin-left: 20px;
+        font-size: x-small;
+       } 
+       #nav2{
+        display: flex;
+        justify-content: space-between;
+        width: 100%; position: fixed;
+        margin-top: 20px;background-color: rgb(248, 248, 248);
+       }
+       #nav2 div{
+        display: flex;
+ align-items:center ;
+ 
+       }
+       #nav2 div:nth-child(1){
+        margin-left: 150px;
+       } 
+       #nav2 div p{
+        margin-left: 20px;
+       } 
+       #nav2 div a{
+        margin-left: 20px;
+        text-decoration: none;
+        color: black;
+       } 
+       #nav2 div img{
+        margin-left: 20px;
+       } 
+       #nav2 input{
+        height: 30px;
+       width: 250px;
+       border: none;
+       background-color: rgb(238, 238, 238);
+       border-radius: 8px;
+       }
+       #nav2 h2{
+margin-right: 20px;
+       }
+       #nav2 div:nth-child(2) img{
+        width: 20px;
+       }
+       #nav2 div:nth-child(2){
+        margin-right: 150px;
+        
+       } 
+       #fimg{
+        margin-top: 100px;
+        width: 100%;
+       }
+       #fimg2{
+        margin-top: 10px;
+        width: 100%;
+       }
+       #logo{
+        width: 40px;
+margin-right: 10px;
+       }
+       #low{
+width: 70%;
+
+margin: auto;display: grid;
+grid-template-columns: repeat(3,1fr);
+gap: 5px;
+       }
+ #low img{      
+width: 100%;
+height: 95%;
+       }
+    </style>
+</head>
+<body>
+    <div id="nav">
+        <div>
+            <p>Offers</p>
+            <p>Fanbook</p>
+            <p>Download App</p>
+            <p>TriBe Membership</p>
+        </div>
+
+        <div>
+<p>Contact Us</p>
+<p>Track Order</p>
+        </div>
+    </div>
+<div id="nav2">
+<div>
+    <img id="logo" src="LOGO.png" alt="" >
+<i> <a href="home.html"><h2>RAX CART</h2></a></i> 
+<p>MEN</p>
+<p>WOMEN</p>
+<p>MOBILE COVERS</p>
+</div>
+<div>
+<input type="text" placeholder="Search by product, category or collectior" name="" id=""><p>|</p>
+
+  <a href="./singin.html"> <b> <p>Login</p</b> </a> 
+
+<img src="https://www.freeiconspng.com/thumbs/heart-png/heart-png-15.png" alt="">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmthDqHW1p7dfHpE7s32bpjzfHjtF00zcejtAuslYfwQxV1Qb4tilHRLoQpfabivds-bE&usqp=CAU" alt="">
+</div>
+</div>
+
+    <img id="fimg" src="https://images.bewakoof.com/banner/fanbook-main-banner-1649422407.jpg" alt="">
+    <img id="fimg2" src="https://images.bewakoof.com/banner/fanbook-header-banner-1649422406.jpg" alt="">
+
+    <div id="low">
+            <!-- All img put hear -->
+    </div>
+</body>
+</html>
+<script>
+    let api="https://63c63b14d307b7696735016b.mockapi.io/img"
+    
+    fetch(api)
+        .then((request)=>{
+            return request.json()
+        })
+        .then((data)=>{
+            console.log(data)
+            check(data)
+        })
+        .catch((err)=>{
+            console.log(err)
+        })
+        function check(data){
+data.forEach(element => {
+    let img=document.createElement("img")
+    img.src=element.avatar
+   document.getElementById("low").append(img)
+});
+        }
+</script>
