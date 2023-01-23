@@ -49,7 +49,7 @@ text-decoration: none;
 color: black;
 } 
 #nav2 div img{
-margin-left: 20px;
+margin-left: 5px;
 } 
 #nav2 input{
 height: 30px;
@@ -65,22 +65,26 @@ margin-right: 20px;
 width: 20px;
 }
 #nav2 div:nth-child(2){
-margin-right: 150px;
-
+margin-right: -100px;
 } 
+
+
 #nav3{
-display: flex;
-justify-content:center;
-justify-content: space-evenly;
+
 width: 50%;
+display: flex;justify-content:center;
+justify-content: space-evenly;
+width: 100%;
 margin: auto;
- width: 100%; position: fixed;
-margin-top: 100px;
+ position: fixed;
 
-
+  display: flex;
+  margin-top: 100px;
 background-color: rgb(248, 248, 248);
 top: 0;
 box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+
+
 } 
 #fimg{
 width: 100%;
@@ -181,7 +185,38 @@ margin-bottom: 2%;
 
  }
  .carousel a{
-
 margin-left: 1%;
+ }
+ .carousel-cell{
+   width: 22%;
+   font-size: 14px;
+   border: solid rgb(241, 237, 237);
+   height: 500px;
+  margin-left: 3%;
+ }
+ .carousel-cell p{
+   padding-left: 10px;
+   margin-top: -10px;
+ }
+ .carousel-cell h4{
+   padding-left: 10px;
+   margin-top: 0px;
+ }
+ .carousel-cell h1{
+   padding-left: 10px;
+   margin-top: -10px;
+ }
+ .endimg{
+   display: flex;
+ }
+ .slide{
+   margin-bottom: 50px;
+ }
+ .slide img{
+width: 95%;
+ }
+ .car{
+   margin-left: 0px;
+   margin-right: 0px;
 
  }
